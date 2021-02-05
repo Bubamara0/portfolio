@@ -1,0 +1,505 @@
+/********************************************/
+/***************INITIALISATION***************/
+/********************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  background-color: white; 
+  color: #8b6260;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  font-family: "orkney-light.otf";
+}
+
+/********************************************/
+/*******************FONTS********************/
+/********************************************/
+
+body {
+  border: solid black; 
+  border-width: 0 30px 0 30px;
+}
+
+@font-face {
+  font-family: "orkney-light.otf";
+  src: url("fonts/orkney-light.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "BladeBrotherhood.ttf";
+  src: url("fonts/bladebrotherhood.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Archia-Regular.otf";
+  src: url("fonts/Archia-Regular.otf") format("truetype");
+}
+
+
+
+/********************************************/
+/*******************HERO*********************/
+/********************************************/
+
+h3 {
+  font-family: "bladebrotherhood.ttf";
+  font-size: 500%;
+  font-weight: 400;
+  padding-left: 60px;
+  padding-top: 110px;
+}
+
+
+#hero {
+  height: 300px;
+  margin-bottom: 100px;
+  display: flex;
+  background-color: rgba(172, 158, 133, 0.384); 
+  align-items: center;
+  border: black solid;
+  border-width: 10px 0 10px 0;
+  overflow: hidden;
+  margin-left: -1px;
+}
+
+#un:hover a,
+#deux:hover a,
+#trois:hover a {
+  letter-spacing: 3px; 
+}
+
+#colonnes {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+}
+
+#nom {
+  float: left;
+  font-size: 250%;
+  text-align: right;
+  padding: 40px;
+  list-style: none;
+}
+#categories {
+  list-style: none;
+  font-size: 150%;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  padding: 55px 65px 65px 20px;
+}
+
+#categories li {
+  margin-top: 20px;
+  font-style:italic;
+}
+
+#categories a {
+  text-decoration: none;
+  transition: color 0.4s;
+  font-family: "bladebrotherhood.ttf";
+  color: black;
+}
+
+#categories a:hover,
+#categories a:active {
+  color: #8b6260; 
+}
+
+#img_hero {
+  width: 100%;
+  opacity: 45%;
+  z-index: -10;
+}
+
+/********************************************/
+/********************CV**********************/
+/********************************************/
+
+.dates{
+  font-weight: bold;
+  padding:10px;
+  font-size:115%;
+}
+.lieu{
+  font-size:115%;
+  align-self: center;
+}
+.git{
+  width:70px;
+}
+
+.formation ul,
+.experience ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.experience a{
+  text-decoration: none;
+  color:rgb(54, 27, 49);
+  font-weight:bold;
+}
+
+.format{
+  font-size:90%;
+  padding-top:10px;
+}
+
+
+.formation li,
+.experience li {
+  width: 300px;
+  padding: 30px;
+  list-style: none;
+  border-radius: 10px;
+  border: black solid 3px; 
+}
+
+#box1,
+#box2,
+#box3 {
+  background-color: rgba(146, 90, 90, 0.342);
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#box1:hover,
+#box2:hover,
+#box3:hover {
+  background-color: rgba(146, 90, 90, 0.411);
+  transform: rotate(1deg);
+}
+
+#box4,
+#box5,
+#box6,
+#box7 {
+  background-color: rgba(146, 90, 90, 0.342);
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#box4:hover,
+#box5:hover,
+#box6:hover,
+#box7:hover {
+  background-color: rgba(146, 90, 90, 0.411);
+  transform: rotate(1deg);
+}
+
+.logo {
+  width: 170px;
+  padding: 20px;
+  opacity: 80%;
+}
+.logo:hover{
+  opacity: 100%;
+}
+#langages,
+#logiciels,
+#interets,
+#interets_suite {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.interet {
+  width: 493px;
+  opacity:90%;
+}
+.interet:hover{
+  opacity:100%;
+}
+#interets_suite {
+  margin-bottom: 150px;
+}
+
+
+
+
+/********************************************/
+/***************REALISATIONS*****************/
+/********************************************/
+
+#ligne1,
+#ligne2 {
+  display: flex;
+  justify-content: center;
+}
+#ligne2 {
+  margin-bottom: 200px;
+}
+.creations {
+  width: 493px;
+  padding: 1px;
+}
+
+
+#blend {
+  flex: 1;
+}
+
+
+/**************DALI*************/
+.dali {
+  z-index: 1;
+  transition: opacity 0.4s;
+  background-color: white;
+  position: absolute;
+}
+
+.dali:hover {
+  opacity: 0;
+}
+.dali2 {
+  background-color: #ac9897; 
+}
+
+/*************PETADOPT************/
+.petadopt {
+  z-index: 1;
+  transition: opacity 0.4s;
+  background-color: white;
+  position: absolute;
+}
+
+.petadopt:hover {
+  opacity: 0;
+}
+.petadopt2 {
+  background-color: #ac9897; 
+}
+
+
+/*************INSTANT VÉGÉTAL*************/
+
+.instantvegetal {
+  z-index: 1;
+  transition: opacity 0.4s;
+  background-color: white;
+  position: absolute;
+}
+
+.instantvegetal:hover {
+  opacity: 0;
+}
+.instantvegetal2 {
+  background-color: #ac9897; 
+}
+
+
+/*************SCRATCH************/
+
+.scratch {
+  flex:1;
+  z-index: 1;
+  transition: opacity 0.4s;
+  background-color: white;
+  position: absolute;
+}
+
+.scratch:hover {
+  opacity: 0;
+}
+.scratch2 {
+  background-color: #ac9897; 
+}
+
+
+/*************GUI************/
+
+.mer {
+  flex:1;
+  opacity: 70%;
+  
+}
+.mer:hover {
+  opacity: 100%;
+}
+
+.python { 
+  flex:1;
+  opacity: 80%;
+ 
+}
+.python:hover {
+  opacity: 100%;
+}
+
+
+.realisations {
+  margin-top: 150px;
+}
+
+.realisations h3 {
+  margin-bottom: 90px;
+}
+
+
+
+/********************************************/
+/******************CONTACT*******************/
+/********************************************/
+
+
+.formulaire {
+  float: right;
+  margin-right: 5rem;
+  width: 25rem;
+  background-color: #dac7c7;
+  border-radius: 2rem;
+  padding-top: 1rem;
+  border: 5px black solid;
+  margin-top: 5rem;
+  margin-bottom: 200px;
+}
+
+input {
+  margin-top:20px;
+  margin-left: 4rem;
+  margin-bottom: 25px;
+  padding: 10px 20px;
+  font-family: "orkney-light";
+  font-size: 17px;
+  background-color: #e9e9e7e5;
+  transition: background-color 1s;
+  border-radius: 0.5rem;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  background-color: rgb(199, 194, 155);
+}
+
+textarea{
+  padding:15px;
+}
+
+#message{
+  padding-left:80px;
+}
+
+#contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#textead {
+  border-radius: 20px;
+  border: 2px rgba(0, 0, 0, 0.089) solid;
+  margin: 40px 0 100px 100px;
+  background-color: rgba(207, 207, 207, 0.233);
+  width: 450px;
+}
+#nomprenom {
+  padding-top: 30px;
+  font-size: 180%;
+}
+#adresse {
+  margin: 70px;
+}
+#adresse h3 {
+  font-size: 1000%;
+
+}
+#adresse p {
+  padding: 10px 10px 10px 50px;
+}
+#adresse a {
+  color: #693837;
+  padding-bottom: 30px;
+}
+.devoiler {
+  justify-content: center;
+  padding: 50px;
+  margin-right: 150px;
+}
+
+#open {
+  height: 80px;
+  font-size: 150%;
+  color: #8b6260;
+  padding: 10px 15px 10px 15px;
+  border: 2px rgba(0, 0, 0, 0.356) solid;
+  background-color: rgba(207, 207, 207, 0.267);
+  border-radius: 25px;
+  opacity: 80%;
+}
+
+#open p {
+  float: left;
+  padding: 10px;
+}
+#open:hover {
+  cursor: pointer;
+  transform: translateX(1%);
+  transition: transform 0.3s ease-in-out;
+}
+#open:hover p {
+  font-style: italic;
+}
+
+.fleche {
+  width: 0;
+  height: 0;
+  float: right;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  margin-left: 5px;
+  border-left: 50px solid #8b626093;
+  margin-top: 5px;
+}
+.popup-container {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.popup-container.active {
+  display: flex;
+  width: 400px;
+  margin-top: 160px;
+}
+
+#close {
+ 
+  float: right;
+  padding: 20px;
+  font-size: 200%;
+  background-color: rgb(145, 141, 145);
+}
+
+/********************************************/
+/******************FOOTER********************/
+/********************************************/
+
+footer {
+  background-color: black;
+  height: 100px;
+  margin-left: -1px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
