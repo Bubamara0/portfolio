@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+
+<body>
+<header>
+    <nav>          
+        <div id="hero">
+            <img src="img/hero.jpg" id="img_hero" alt="Photo plantes">     
+            <div id="colonnes">
+                <ul id="nom">
+                    <li><h1>JUNIN</h1> </li>
+                    <li>TIMOTHÉE</li> 
+                    <li> Développeuse web</li>
+                </ul>
+                    
+                <ul id="categories">  
+                    <li id="un"><a href="index.html">CV</a></li> 
+                    <li id="deux"><a href="réalisations.html">RÉALISATIONS</a></li>
+                    <li id="trois"><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>    
+        </div>
+    </nav>
+</header>
+
+
+<section id="contact">
+    <div id="adresse">
+        <h3>Contact</h3>
+        <div id="textead">
+            <p id="nomprenom">Junin Timothée</p>
+            <p>54 rue du Haut Chemin<br>
+            35800 DINARD</p>
+            <p>06 66 39 44 61</p>
+            <p><a href="mailto:t.junin@hotmail.fr"><strong>E-mail</strong></a></p>
+        </div>
+    </div>
+<div class="devoiler">
+        
+ <button id="open"><p>Contactez-moi</p><div class="fleche"></div></button>
+ <div class="popup-container" id="container">
+     <div class="popup">
+         <button id="close">&times;</button> 
+         <div class="formulaire">
+            <div>
+                <input type="text" id="name" name="user_name" placeholder="Votre nom">
+            </div>
+            <div>
+                <input type="email" id="mail" name="user_mail" placeholder=" Votre e-mail">
+            </div>
+            <div id="message">
+                <textarea id="mess" name="story"
+                        rows="5" cols="33" placeholder="Message">
+                </textarea>
+            </div>
+            <input type="submit" value="Envoyer">
+        </div>
+    </div>
+   
+ </div>
+</div>
+
+    
+
+</section>   
+
+<footer>
+    <p><a href="https://github.com/Bubamara0" target="_blank"><img src="img/github.png" class="git" alt="logo git"></a></p>
+</footer>
+
+</body>
+</html>
